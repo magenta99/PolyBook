@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edtMaSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã sách"/>
+            <Spinner
+                android:id="@+id/spnLoaiSach"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></Spinner>
+            <EditText
+                android:id="@+id/edtTenSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên sách"/>
+            <EditText
+                android:id="@+id/edtTacGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tác giả"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhà xuất bản"
+                android:id="@+id/edtNhaXuatBan"/>
+            <EditText
+                android:id="@+id/edtDơnGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Đơn giá"/>
+
+            <EditText
+                android:id="@+id/edtSoLuong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số lượng"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/buttonred"
+                    android:text="THÊM"
+                    android:id="@+id/btnAdđBook"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/buttonred"
+                    android:id="@+id/btnCancelBook"
+                    android:text="HỦY"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnShowBook"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/buttonred"
+                android:text="Xem Sách"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

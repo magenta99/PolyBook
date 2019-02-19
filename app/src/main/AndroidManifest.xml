@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fisrtproject.polybook">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.BookActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        />
+        <activity
+            android:name=".activity.BillActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        />
+        <activity
+            android:name=".activity.BestSellerActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        />
+        <activity
+            android:name=".activity.StatisticActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        />
+        <activity
+            android:name=".activity.ListUser"
+            android:parentActivityName=".activity.UserActivity" />
+        <activity
+            android:name=".activity.ListCategory"
+            android:parentActivityName=".activity.CategoryActivity" />
+        <activity
+            android:name=".activity.ListBook"
+            android:parentActivityName=".activity.BookActivity" />
+        <activity
+            android:name=".activity.ListBill"
+            android:parentActivityName=".activity.BillActivity" />
+        <activity
+            android:name=".activity.UserActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        <activity android:name=".ListBillDetail"></activity>
+    </application>
+
+</manifest>
